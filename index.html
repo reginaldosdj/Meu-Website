@@ -11,18 +11,20 @@
     <title>Reginaldo Santos - Desenvolvedor</title>
   </head>
   <body>
-    <header>
+    <header id="header">
       <div class="container">
-        <div class="logo">
-          <span class="paragraph-1">Reginaldo</span>
-          <span class="paragraph-2">Santos</span>
-        </div>
         <nav>
-          <ul>
-            <a href="#Sobre"><li>Sobre</li></a>
-            <a href="#Conhecimentos"><li>Conhecimentos</li></a>
-            <a href="#Portfolio1"><li>Portfólio</li></a>
-            <a href="#Contato"><li>Contato</li></a>
+          <ul id="lista_menu">
+            <a onclick="mostrarAtivo(this);" href="#Sobre"><li>Sobre</li> </a>
+            <a onclick="mostrarAtivo(this);" href="#Conhecimentos"
+              ><li>Conhecimentos</li></a
+            >
+            <a onclick="mostrarAtivo(this);" href="#Portfolio1"
+              ><li>Portfólio</li></a
+            >
+            <a onclick="mostrarAtivo(this);" href="#Contato"
+              ><li>Contato</li></a
+            >
           </ul>
         </nav>
       </div>
@@ -33,7 +35,10 @@
         <p class="msg-background">
           Olá, bem vindo! Sou <strong>REGINALDO</strong>
         </p>
-        <p>Desenvolvedor FRONT-END</p>
+        <p>
+          Desenvolvedor
+          <span class="mudarEscrita typing-animation">FRONT-END</span>
+        </p>
       </div>
     </section>
 
@@ -43,7 +48,7 @@
         <div class="biographical">
           <div class="biographical_img">
             <img
-              src="/public/images/minhafoto.png"
+              src="./public/images/minhafoto.png"
               alt="Foto do Desenvolvedor"
             />
           </div>
@@ -88,7 +93,7 @@
         <div class="technical_skill">
           <div class="skill">
             <div class="img-skill">
-              <img src="/public/images/frontend.png" alt="" />
+              <img src="./public/images/frontend.png" alt="" />
             </div>
             <div class="title-skill">
               <p>Front-end</p>
@@ -96,7 +101,7 @@
           </div>
           <div class="skill">
             <div class="img-skill">
-              <img src="/public/images/backend.png" alt="" />
+              <img src="./public/images/backend.png" alt="" />
             </div>
             <div class="title-skill">
               <p>Back-end</p>
@@ -104,7 +109,7 @@
           </div>
           <div class="skill">
             <div class="img-skill">
-              <img src="/public/images/mobile.png" alt="" />
+              <img src="./public/images/mobile.png" alt="" />
             </div>
             <div class="title-skill">
               <p>Mobile</p>
@@ -153,20 +158,20 @@
             <a
               href="https://www.facebook.com/profile.php?id=100003641126238"
               target="_blank"
-              ><img src="/./public/images/facebook.png" alt="facebook"
+              ><img src="./public/images/facebook.png" alt="facebook"
             /></a>
             <a href="https://github.com/reginaldosdj" target="_blank"
-              ><img src="/./public/images/github.png" alt="github"
+              ><img src="./public/images/github.png" alt="github"
             /></a>
             <a
               href="https://www.linkedin.com/in/reginaldo-santos-76b143106/"
               target="_blank"
-              ><img src="/./public/images/linkedin.png" alt="linkedin"
+              ><img src="./public/images/linkedin.png" alt="linkedin"
             /></a>
             <a
               href="https://api.whatsapp.com/send?phone=5521984191013&text=Olá%20Reginaldo%20gostaria%20de%20conversar%20com%20você"
               target="_blank"
-              ><img src="/./public/images/whatsapp.png" alt="whatsapp"
+              ><img src="./public/images/whatsapp.png" alt="whatsapp"
             /></a>
             <div class="contact_curriculum">
               <h3>Currículo</h3>
@@ -186,5 +191,6 @@
         <p>Criado por: Reginaldo Santos de Jesus</p>
       </div>
     </footer>
+    <script type="text/javascript" src="./public/scripts/script.js"></script>
   </body>
 </html>
